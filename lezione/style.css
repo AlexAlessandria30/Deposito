@@ -1,0 +1,157 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --main-color : #3fd87c;
+    --secondary-color : #fdb82c;
+    --gray : #999999;
+    --light-gray : #fafafa;
+    --radius : 20px;
+}
+
+/* COMMONS */
+
+.btn-main {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn-main:hover {
+    color: white;
+}
+
+.btn-sec {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: solid 2px var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.btn-sec:hover {
+    color: var(--secondary-color);
+    background-color:transparent;
+
+}
+
+.btn-glass {
+    color : white;
+    border: solid 2px rgba(255, 255, 255, 0.507);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.tc-linear {
+    background: linear-gradient(45deg ,var(--main-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tc-gray {
+    color: var(--gray);
+}
+
+.tc-main {
+    color: var(--main-color);
+}
+
+/* NAVBAR */
+
+.square-navbar {
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%); 
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 15px 0px;
+}
+
+.square-navbar .nav-link{
+    color: black !important;
+    margin: 12px 20px !important;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.square-navbar .nav-link:hover{
+    color: var(--main-color) !important;
+    transform: scale(1.1) !important;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.square-navbar .navbar-toggler:focus{
+    box-shadow : none
+}
+
+/* HEADER */
+
+.masthead {
+    height: 100vh;
+    background: linear-gradient(#00000057 , #00000057) , url('immagini/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* INFO SECTION */
+
+.info-section {
+    position: relative;
+    top: -100px;
+}
+
+/* ABOUT SECTION */
+
+.bg-about-section {
+    background: linear-gradient(#00000057 , #00000057) , url('immagini/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.square-input {
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: solid 1px white;
+    padding: 10px 20px;
+}
+
+.square-input:focus {
+    outline: none ;
+}
+
+.about-card {
+    padding : 20px;
+    border: solid 2px var(--light-gray);
+}
+
+/* PROJECT SECTION */
+.project-card .frame-img {
+    overflow: hidden;
+    position: relative;
+}
+.project-card img {
+    transition: 0.5s;
+}
+
+.project-card:hover img {
+    transform: scale(1.3);
+}
+
+.project-card:hover .btn-show-project {
+    opacity: 1;
+}
+
+.btn-show-project {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    top: calc(50% - 35px); 
+    left: calc(50% - 35px);
+    opacity: 0;
+    transition: 0.5s;
+}

@@ -1,0 +1,243 @@
+#header {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(#00000057 , #00000057) , url('/img/imfh.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+:root {
+
+    --primario: #0BDEC2;
+    --secondario: #00F58D;
+    --terzo: #1ABFFB;
+    --grey: #f5f5f5;
+    --complementare: whitesmoke;
+    
+
+}
+
+
+/* card sovrapposte */
+.info-section {
+    position: relative;
+    top: -100px;
+}
+
+
+/* navbar */
+
+.square-navbar {
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%); 
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 3px 0px;
+}
+
+.square-navbar .nav-link{
+    color: black !important;
+    margin: 12px 20px !important;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.square-navbar .nav-link:hover{
+    color: var(--secondario)!important;
+    transform: scale(1.1) !important;
+    border-bottom: 3px solid var(--secondario);
+}
+
+.square-navbar .navbar-toggler:focus{
+    box-shadow : none
+}
+
+
+
+
+/* footer */
+
+.fine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.footer-circular-link {
+    height: 60px;
+    width: 60px;
+    color: var(--secondario);
+    background-color: var(--complementare);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    transition: all 0.25s;
+
+}
+.footer-circular-link:active {
+    background-color: var(--complementare);
+}
+.footer-circular-link:hover {
+    color: var(--complementare);
+    background-color: var(--secondario);
+    transition: all 0.25s;
+}
+
+.foooter {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    padding: 0;
+}
+
+/* testi */
+.testo-principale {
+   color: var(--complementare);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+
+}
+.testo-principale2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+
+}
+.testo-principale3 {
+    color: var(--complementare);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+.text1{
+    color: var(--secondario);
+}
+
+
+/* pagina grazie */
+#header1{
+    height: 500px;
+    width: 100%;
+    background:  linear-gradient(#00000057 , #00000017) , url('/img/thanks.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* card dottori */
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 0px;
+  
+ }
+ 
+ .card2{
+     border: 1px solid black;
+     border-radius: 10%;
+ }
+
+
+.cardS{
+    border: 1px solid black;
+    border-radius: 5%;
+
+}
+
+/* button */
+
+.button1{
+    background-color: var(--primario);
+    color: blue;
+    transition: 0.1s;
+
+}
+.button1:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: blue;
+}
+.buttonV{
+    margin: 5px;
+    color: var(--primario);
+    transition: 0.1s;
+}
+.buttonV:hover{
+    color: var(--secondario);
+    
+}
+
+
+/* accordion */
+.accordion .accordion-item .accordion-button {
+    background:  var(--complementare);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media screen and (max-width: 992px) {
+   
+
+    .testo-principale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    
+    }
+    .testo-principale2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    
+    }
+    .testo-principale3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
+    }
+
+    .mes{
+      display: none;
+        
+    }
+   
+
+    .foooter{
+        width: 100%;
+        height: 500px;
+       
+    }
+   
+
+}

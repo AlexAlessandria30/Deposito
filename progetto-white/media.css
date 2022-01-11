@@ -1,0 +1,20 @@
+@media screen and (max-width : 720px) {
+   .fig-1 .fig-2{
+
+      width: 100%;
+   }
+
+ .fig-2{
+   
+      background-color: white;
+      position: relative;
+      left: 60vw;
+      padding-bottom: 80px;
+  
+ }
+ 
+
+
+   
+}
+

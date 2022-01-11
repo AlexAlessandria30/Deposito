@@ -1,0 +1,11 @@
+@import'~bootstrap/dist/css/bootstrap';
+
+
+@import'~dropzone/dist/basic';
+@import'~dropzone/dist/dropzone';
+
+
+
+@import'./style';
+@import'./mediaquery';
+

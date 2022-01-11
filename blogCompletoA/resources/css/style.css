@@ -1,0 +1,117 @@
+#header {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(#00000057 , #00000057) , url('/img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.testo-principale {
+    color: whitesmoke;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 10rem;
+ 
+ }
+
+ .testo-principale2 {
+     color: whitesmoke;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+ 
+ }
+ .testo-principale3 {
+    color: rgb(126, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+
+/* navbar */
+.square-navbar {
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%); 
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 1px 0px;
+    border-bottom: 5px;
+}
+
+.square-navbar .nav-link{
+    color: black !important;
+    margin: 10px 20px !important;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.square-navbar .nav-link:hover{
+    color: rgb(126, 5, 5)!important;
+    transform: scale(1.1) !important;
+    border-bottom: 3px solid rgb(126, 5, 5);
+}
+
+.square-navbar .navbar-toggler:focus{
+    box-shadow : none
+}
+
+/* card */
+.card-home{
+    display: flex;
+    justify-content: center;
+   margin-bottom: 10px ;
+}
+
+.button1{
+    background-color: rgb(126, 5, 5);
+    color: whitesmoke;
+}
+.button1:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .testo-principale {
+        color: whitesmoke;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 5rem;
+     
+     }
+    
+     .testo-principale2 {
+         color: whitesmoke;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 2rem;
+     
+     }
+     .testo-principale3 {
+        color: rgb(126, 5, 5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    
+    }
+    
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width : 992px) {
+    .square-navbar .nav-link{
+        margin: 0px 20px !important;
+    }
+    .square-navbar .navbar-toggler{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+}
