@@ -1,6 +1,6 @@
 // scrittura delle principali funzioni
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Main {
 
@@ -29,79 +29,88 @@ public class Main {
 
         // condizioni con il switch
 
-        String nomi = "Luca";
+        // String nomi = "Luca";
 
-        switch (nomi) {
-            case "Luca":
-                System.out.println("Ciao luca");
-                break;
-            case "MArco":
-                System.out.println("Ciao MArco");
-                break;
-            case "Giorgio":
-                System.out.println("Ciao Giorgio");
-                break;
+        // switch (nomi) {
+        // case "Luca":
+        // System.out.println("Ciao luca");
+        // break;
+        // case "MArco":
+        // System.out.println("Ciao MArco");
+        // break;
+        // case "Giorgio":
+        // System.out.println("Ciao Giorgio");
+        // break;
 
-            default:
-                System.out.println("Non ti conosco");
-                break;
-        }
+        // default:
+        // System.out.println("Non ti conosco");
+        // break;
+        // }
 
-        // if else if ed else condizioni
+        // // if else if ed else condizioni
 
-        short numero = 1;
+        // short numero = 1;
 
-        if (numero < 10) {
-            System.out.println("il numero è minore");
+        // if (numero < 10) {
+        // System.out.println("il numero è minore");
 
-        } else if (numero > 10) {
-            System.out.println("il numero è maggiore");
+        // } else if (numero > 10) {
+        // System.out.println("il numero è maggiore");
 
-        } else {
-            System.out.println("non trovo il numero");
-        }
+        // } else {
+        // System.out.println("non trovo il numero");
+        // }
 
-        // ciclo while
+        // // ciclo while
 
-        int i = 0;
-        while (i < 5) {
-            System.out.println(i);
-            i++;
-        }
+        // int i = 0;
+        // while (i < 5) {
+        // System.out.println(i);
+        // i++;
+        // }
 
-        // cicli do while
+        // // cicli do while
 
-        do {
-            System.out.println("dowhile" + i);
-        } while (i < 0);
+        // do {
+        // System.out.println("dowhile" + i);
+        // } while (i < 0);
 
-        // array
+        // // array
 
-        // dichiarare e inizializzare
+        // // dichiarare e inizializzare
 
-        int[] numeri = new int[2];
+        // int[] numeri = new int[2];
 
-        numeri[0] = 1;
-        numeri[1] = 2;
-      
+        // numeri[0] = 1;
+        // numeri[1] = 2;
 
-        // unico passaggio
+        // // unico passaggio
 
-        int[] valori = { 10, 20, 30 };
+        // int[] valori = { 10, 20, 30 };
 
-        // foreach con array
+        // // foreach con array
 
-        for (int valore: valori) {
-            System.out.println(valore);
-        }
+        // for (int valore: valori) {
+        // System.out.println(valore);
+        // }
 
-        //for con array
+        // //for con array
 
-        for(int j = 0 ; j < numeri.length ; j++){
-            System.out.println(numeri[j]);
+        // for(int j = 0 ; j < numeri.length ; j++){
+        // System.out.println(numeri[j]);
 
-        }
+        // }
 
+        Persona persona1 = new Persona("Luca", "Rossi", 22, "Rosso");
+        Persona persona2 = new Persona("Jgiorgio", "reed", 234, "nero");
+
+        System.out.println(persona1);
+        System.out.println(persona2);
+
+        persona1.saluta(persona2); //passiomo gli oggetti come parametri delle funzioni
+
+        Pizza pizza1 = new Pizza("integrale");
+        Pizza pizza2 = new Pizza("Classico", "Sugo", "Mozzarella", "Piccante", "Salame");
 
     }
 }

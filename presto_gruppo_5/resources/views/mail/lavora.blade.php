@@ -28,6 +28,7 @@
 
 
         <div class="row justify-content-center">
+           
             <form class="col-12 col-md-6" method="POST" action="{{ route('mail.storework') }}">
                 @csrf
                 <div class="mb-3">

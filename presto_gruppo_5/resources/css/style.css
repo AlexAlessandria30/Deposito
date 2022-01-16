@@ -211,69 +211,68 @@
     
     
     
-/* footer */
-.foot-text{
-  color: white !important;
-}
+    
+    /* footer */
+    .foot-text{
+        color: white !important;
+    }
 
-.foot-text h4:hover {
-color: var(--secondary);
-transition: all 0.25s;
+    .foot-text h4:hover {
+      color: var(--secondary);
+      transition: all 0.25s;
 
-}
+    }
 
-.foot-text h4 a:hover {
-color: var(--secondary) !important;
-transition: all 0.25s;
+    .foot-text h4 a:hover {
+      color: var(--secondary) !important;
+      transition: all 0.25s;
 
-}
+    }
 
-.fine{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+    .fine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    
+    }
+    
+    .footer-circular-link {
+        height: 60px;
+        width: 60px;
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        transition: all 0.25s;
+    
+    }
+   
+    .footer-circular-link:hover {
+        color: var(--secondary);
+        transition: all 0.25s;
+    }
+    
+    .foooter {
+        width: 100%;
+        min-height: 35vh;
+        background-color: black;
+        padding: 0; 
+    }
 
-}
+    
+    .line-footer{
+      border: 1px solid;
+      background-color: white;
+      max-width: 27vw;
+    }
 
-.footer-circular-link {
-  height: 60px;
-  width: 60px;
-  color: var(--primary);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5px;
-  transition: all 0.25s;
-
-}
-
-.footer-circular-link:hover {
-  color: var(--secondary);
-  transition: all 0.25s;
-}
-
-.foooter {
-  width: 100%;
-  min-height: 35vh;
-  background-color: black;
-  padding: 0; 
-}
-
-
-.line-footer{
-border: 1px solid;
-background-color: white;
-max-width: 27vw;
-}
-
-.partita-iva{
-font-size: 12px;
-color: white;
-}
-
-
+    .partita-iva{
+      font-size: 12px;
+      color: white;
+    }
     
     
     
@@ -563,6 +562,7 @@ color: white;
   background: linear-gradient(var(--secondary), var(--primary) );
   color: var(--secondary) !important;
 }
+
 
 
 

@@ -24,6 +24,7 @@ Route::get('/create', [ArticleController::class, 'create'])->name('article.creat
 Route::post('/article-store',[ArticleController::class, 'store'])->name('article.store');
 
 /* LANGUAGE */
+
 Route::post('/locale/{locale}', [PublicController::class, 'locale'])->name('locale');
 
 //caricamento img

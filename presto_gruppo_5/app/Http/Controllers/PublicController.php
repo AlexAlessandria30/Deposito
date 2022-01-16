@@ -39,6 +39,7 @@ class PublicController extends Controller
          return view('article.type', compact('articles', 'category'));
     }
 
+
     //funzione per ricerca full text
     public function search(Request $request){
         $q = $request->input('q');
@@ -47,6 +48,7 @@ class PublicController extends Controller
 
         return view('article.search', compact('q', 'articles'));
     }
+    
 
     public function locale($locale){
         session()->put('locale', $locale);
