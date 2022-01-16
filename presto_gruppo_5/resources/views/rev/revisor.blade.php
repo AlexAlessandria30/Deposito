@@ -31,20 +31,42 @@
                                 <div class="col-12">
                                     <img src="{{ $image->getUrl(500, 300) }}" class="" alt="">
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    Adult:{{ $image->adult }}<br>
-                                    spoof: {{ $image->spoof }}<br>
-                                    medical:{{ $image->medical }}<br>
-                                    violence:{{ $image->violence }}<br>
-                                    racy:{{ $image->racy }}<br>
+
+                                <div class="d-flex visionsafe">
+                                    <span>Adult: </span>
+                                    <p class="list-allert {{ $image->adult }}">
+                                    </p>
+                                </div>
+                                <div class="d-flex visionsafe">
+                                    <span>Spoof: </span>
+                                    <p class="list-allert {{ $image->spoof }}">
+                                    </p>
+                                </div>
+                                <div class="d-flex visionsafe">
+                                    <span>Medical: </span>
+                                    <p class="list-allert {{ $image->medical }}">
+                                    </p>
+                                </div>
+                                <div class="d-flex visionsafe">
+                                    <span>Violence: </span>
+                                    <p class="list-allert {{ $image->violence }}">
+                                    </p>
+                                </div>
+                                <div class="d-flex visionsafe">
+                                    <span>Racy: </span>
+                                    <p class="list-allert {{ $image->racy }}">
+                                    </p>
                                 </div>
                                 <ul class="col-12 col-md-6">
+                                    <h3>Labels</h3>
                                     @if ($image->labels)
+
                                         @foreach ($image->labels as $label)
-                                            <li>{{ $label }}</li>
+                                            <span>{{ $label }} - </span>
                                         @endforeach
 
                                     @endif
+                                    <hr class="text-warning">
                                 </ul>
                             </div>
                         </div>

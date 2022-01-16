@@ -211,68 +211,69 @@
     
     
     
-    
-    /* footer */
-    .foot-text{
-        color: white !important;
-    }
+/* footer */
+.foot-text{
+  color: white !important;
+}
 
-    .foot-text h4:hover {
-      color: var(--secondary);
-      transition: all 0.25s;
+.foot-text h4:hover {
+color: var(--secondary);
+transition: all 0.25s;
 
-    }
+}
 
-    .foot-text h4 a:hover {
-      color: var(--secondary) !important;
-      transition: all 0.25s;
+.foot-text h4 a:hover {
+color: var(--secondary) !important;
+transition: all 0.25s;
 
-    }
+}
 
-    .fine{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    
-    }
-    
-    .footer-circular-link {
-        height: 60px;
-        width: 60px;
-        color: var(--primary);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 5px;
-        transition: all 0.25s;
-    
-    }
-   
-    .footer-circular-link:hover {
-        color: var(--secondary);
-        transition: all 0.25s;
-    }
-    
-    .foooter {
-        width: 100%;
-        min-height: 35vh;
-        background-color: black;
-        padding: 0; 
-    }
+.fine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 
-    
-    .line-footer{
-      border: 1px solid;
-      background-color: white;
-      max-width: 27vw;
-    }
+}
 
-    .partita-iva{
-      font-size: 12px;
-      color: white;
-    }
+.footer-circular-link {
+  height: 60px;
+  width: 60px;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  transition: all 0.25s;
+
+}
+
+.footer-circular-link:hover {
+  color: var(--secondary);
+  transition: all 0.25s;
+}
+
+.foooter {
+  width: 100%;
+  min-height: 35vh;
+  background-color: black;
+  padding: 0; 
+}
+
+
+.line-footer{
+border: 1px solid;
+background-color: white;
+max-width: 27vw;
+}
+
+.partita-iva{
+font-size: 12px;
+color: white;
+}
+
+
     
     
     
@@ -561,4 +562,52 @@
 .btn-category:hover {
   background: linear-gradient(var(--secondary), var(--primary) );
   color: var(--secondary) !important;
+}
+
+
+
+
+/* REVISOR */
+
+
+.list-allert{
+  border: 1px solid black;
+  box-shadow: 9px 5px 14px 1px rgba(0,0,0,0.25);
+  height: 20px;
+  width: 20px;
+}
+
+
+.UNKNOWN{
+  background-color: green;
+  border-radius: 50%;
+}
+
+.VERY_UNLIKELY{
+  background-color: green;
+  border-radius: 50%;
+}
+
+.UNLIKELY{
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.POSIBLE{    
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.LIKELY{
+  background-color: red;
+  border-radius: 50%;
+}
+
+.VERY_LIKELY{
+  background-color: red;
+  border-radius: 50%;
+}
+
+.visionsafe{
+  justify-content: space-between;
 }

@@ -77,7 +77,7 @@
 
     </div>
 
-    <div class="mt-5">
+    <div class="">
         <p class="partita-iva">© 2021 Presto.it | Strada V. Girfa tire, 2D, 114356 Mondo (Mo) | P.IVA IT0000000221</p>
     </div>
 </footer>
