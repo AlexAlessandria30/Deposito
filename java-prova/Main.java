@@ -101,16 +101,33 @@ public class Main {
 
         // }
 
-        Persona persona1 = new Persona("Luca", "Rossi", 22, "Rosso");
-        Persona persona2 = new Persona("Jgiorgio", "reed", 234, "nero");
+        Persona persona1 = new Persona("Luca", "Rossi");
+        Persona persona2 = new Persona("Jgiorgio", "reed");
 
         System.out.println(persona1);
         System.out.println(persona2);
 
         persona1.saluta(persona2); //passiomo gli oggetti come parametri delle funzioni
+        persona1.Giorno();
 
         Pizza pizza1 = new Pizza("integrale");
         Pizza pizza2 = new Pizza("Classico", "Sugo", "Mozzarella", "Piccante", "Salame");
+
+
+
+        // classe studenti che estende la classe persona
+        Studenti studente1 = new Studenti ("Mario", "Rossi", "Matematica");
+        studente1.Presentazione();
+        studente1.Giorno();
+
+
+
+        // classe astratta
+       Macchina macchina = new Macchina();
+       macchina.frena();
+       macchina.muovi();
+
+
 
     }
 }
