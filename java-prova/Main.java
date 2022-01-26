@@ -47,7 +47,7 @@ public class Main {
         // break;
         // }
 
-        // // if else if ed else condizioni
+        // // if, else if ed else condizioni
 
         // short numero = 1;
 

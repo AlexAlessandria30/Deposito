@@ -17,6 +17,8 @@ use App\Http\Controllers\RevisorController;
 |
 */
 
+//CRUD
+
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
 Route::get('/create', [ArticleController::class, 'create'])->name('article.create');
@@ -34,6 +36,7 @@ Route::post('/article/images/upload',[ArticleController::class, 'storeImages'])-
 Route::delete('/article/images/remove',[ArticleController::class, 'removeImages'])->name('article.images.remove');
 
 Route::get('/article/image', [ArticleController::class, 'getImages'])->name('article.images.get');
+
 // continua CRUD
 
 Route::get('/article-detail/{article}',[ArticleController::class, 'show'])->name('article.show');
