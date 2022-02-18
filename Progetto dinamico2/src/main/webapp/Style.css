@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+h1, h2, h3, h4, h5 {
+	color: #140863;
+}
+
+body{
+	background-color: whitesmoke;
+}
+
+.color{
+	color:red !important;
+}
+
+.text {
+	text-decoration: none;
+	color: black;
+}
+
+.text:hover {
+	color: white;
+}
+
+.tabella {
+	border: 1px solid black;
+	padding-top: 10px;
+	width: 100px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.tabella:hover {
+	background-color: purple;
+	color: white;
+}
+
+.tabella1 {
+	border: 3px solid black;
+	background-color: transparent; width : 400px;
+	height: 500px;
+	font-size: 50px;
+	width: 400px;
+}
+
+.tabella1:hover {
+	background-color: rgb(26, 25, 71);
+	color: white;
+}
+
+.tabella2 {
+	border: 3px solid black;
+	background-color: transparent;
+	width: 200px;
+	height: 300px;
+	font-size: 40px;
+}
+
+.tabella2:hover {
+	background-color: #D4902A;
+	color: white;
+}
+
+.tav1 {
+	margin-bottom: 20px
+}
+
+.tav {
+	
+	border: 1px solid black;
+	color: red;
+	display: flex;
+	justify-content: center;
+}
+
+.tav1 {
+	
+	color: red;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.Lista {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+.Lista1 {
+	display: flex;
+	justify-content: center;
+}
