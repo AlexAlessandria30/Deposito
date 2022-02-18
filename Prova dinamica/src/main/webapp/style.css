@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.bottoni{
+	background-color: transparent;
+	border: 3px solid black;
+	width: 100px;
+	height: 50px;
+	justify-content: center;
+	text-align: center;
+	
+}
+.bottoni:hover{
+	background-color: red;
+	border: 3px solid black;
+	color: white;
+
+}
