@@ -31,27 +31,55 @@ ResultSet lista = (ResultSet) request.getAttribute("Studenti");
 			</div>
 
 		</div>
+		<div class="row justify-content-center text-center">
+			<div class="col-12 justify-content-center">
+				<table class="Lista"
+					style="border-collapse: separate; border-spacing: 20px">
+					<tr class="justify-content-center">
+						<td>Matricola</td>
+						<td>Nome</td>
+						<td>Cognome</td>
+						<td>Data di nascita</td>
+						<td>Città</td>
+
+
+
+					</tr>
+					<%
+					while (lista.next()) {
+					%>
+
+					<tr>
+						<td><%=lista.getString("matricola")%></td>
+						<td><%=lista.getString("nome")%></td>
+						<td><%=lista.getString("cognome")%></td>
+						<td><%=lista.getString("dataN")%></td>
+						<td><%=lista.getString("citta")%></td>
+
+
+					</tr>
+					<%}%>
+				</table>
+			</div>
+		</div>
+
 
 		<div class="row mt-5">
-			<div class="col-12  justify-content-center">
 
-				<%
-				while (lista.next()) {
-				%>
+			<div class="row justify-content-center mt-5">
+				<div class="col-12  justify-content-center">
 
-
-				<div class="tav1"><%=lista.getString("nome") + " " + lista.getString("cognome") + " , " + lista.getString("dataN") + "   "
-		+ lista.getString("citta")%></div>
-
-				<%
-				}
-				%>
-
-
-				<a href="s1?z=2" class="text-center mt-5"><button
-						class=" btn btn-primary">Torna alla home Docente</button></a> <a
-					href="s1?z=4" class="text-center mt-5"><button
-						class=" btn btn-primary">Torna alla home</button></a>
+					<a href="s1?z=10" class="text-center mt-5">
+						<button class=" btn btn-primary">Vedi esami Prenotati</button>
+					</a>
+				</div>
+				<div class="col-12 mt-5 justify-content-center">
+					<a href="s1?z=2" class="text-center mt-5">
+						<button class=" btn btn-primary">Torna alla home Docente</button>
+					</a> <a href="s1?z=4" class="text-center mt-5">
+						<button class=" btn btn-primary">Torna alla home</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

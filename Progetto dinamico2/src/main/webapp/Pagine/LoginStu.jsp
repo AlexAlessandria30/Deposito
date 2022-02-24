@@ -19,16 +19,10 @@ String errore = (String) request.getAttribute("errore");
 	
 <link rel="stylesheet" type="text/css" href="Style.css">
 
-  <script type="text/javascript" src="script.js"></script>
-
- 
 </head>
 <body>
 
-
-
-
-	<div class="container justify-content-center">
+<div class="container justify-content-center">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-6 text-center">
 				<h2>Accedi</h2>
@@ -37,12 +31,12 @@ String errore = (String) request.getAttribute("errore");
 		<div class="row justify-content-center mt-4">
 			<div class="col-12 col-md-6">
 
-				<form action="s2?z=1" method="Post"  id="formlogin" name="myForm" onsubmit="return validateForm()">
+				<form action="s2?z=3" method="Post"  id="formlogin">
 					<div class="mb-3">
-						<label for="exampleInputEmail1" id="email" class="form-label">Email </label>
-						<input type="email" class="form-control" name="email"
-							id="email" aria-describedby="emailHelp">
-						<div id="email" class="form-text"></div>
+						<label for="exampleInputEmail1" class="form-label">Utente </label>
+						<input type="text" class="form-control" name="utente"
+							 aria-describedby="emailHelp">
+						<div id="utente" class="form-text"></div>
 					</div>
 					<div class="mb-3">
 						<label for="Password" id="password" class="form-label">Password</label>
@@ -61,8 +55,7 @@ String errore = (String) request.getAttribute("errore");
 			}
 			%>
 
-			<a href="s2?z=2" class="text-center mt-5"><button
-					class=" btn btn-primary">Registrati</button></a> 
+		
 					
 					<a href="s1?z=4"
 				class="text-center mt-5"><button class=" btn btn-primary">Torna
@@ -79,9 +72,23 @@ String errore = (String) request.getAttribute("errore");
 
 
 
+<script  type="text/javascript">
+	$(document).ready(function() {		
+		$("#formlogin").submit(function() {	
+				var nome=document.getElementById("utente").value;
+				var passwor=document.getElementById("password").value;
+				if(nome=="" ){
+					alert("Inseire un utente");
+					return false;
+				}else{
+					return true;
+				}	
+			});				
+	}); 		
+</script>
 
 
-
-   <script  type="text/javascipt"src="script.js"></script>
-</body>
+ <script type="text/javascript" src="JQueryLib/jquery-1.7.1.min.js"></script>
+ 
+ </body>
 </html>

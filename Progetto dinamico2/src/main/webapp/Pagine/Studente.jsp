@@ -1,3 +1,4 @@
+<%@page import="java.sql.ResultSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,10 +8,7 @@
 <title>Pagina Studenti</title>
 <%
 String titolo = "Corso 432887";
-String studente = (String) request.getAttribute("Studente");
-Integer calcolo = (int) request.getAttribute("calcolo");
-Integer matricola = (int) request.getAttribute("matricola");
-String[] materieSc = (String[]) request.getAttribute("materia");
+ResultSet lista = (ResultSet) request.getAttribute("Materia");
 %>
 
 <link
@@ -18,54 +16,37 @@ String[] materieSc = (String[]) request.getAttribute("materia");
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+
 <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-	<div class="container"></div>
+	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
 				<h2>Benvenuto Studente</h2>
 				<h2><%=titolo%></h2>
-				<div>
-					Benvenuto:
-					<%=studente%>
-					matricola:
-					<%=matricola%></div>
-				<div class=" tav1">
-					Ore di lezione effetuate:
-					<%=calcolo%></div>
+				<div>Benvenuta matricola:</div>
+
 			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12 colmd-6 text-center">
 				<%
-				for (String materia : materieSc) {
+				while (lista.next()) {
 				%>
 
 
-				<div class="tav1"><%=materia%></div>
-
-
+				<div class="tav1"><%=lista.getString("nomeMateria")+", Docente "+lista.getString("docente")%></div>
 
 				<%
 				}
 				%>
 			</div>
-	<a href="s1?z=4" class="text-center mt-5"><button class=" btn btn-primary">Torna
-						alla home</button></a>
 		</div>
-	</div>
-
-
-
-
-
-
-
-
-
 	
-
-
+		
+		<a href="s1?z=9" class="text-center mt-5"><button
+				class=" btn btn-primary">Torna alla home</button></a>
+	</div>
 </body>
 </html>
